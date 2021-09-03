@@ -1,0 +1,54 @@
+:root {
+  --ff-primary: "montserrat", sans-serif;
+  --ff-secondary: "helvetica", monospace;
+
+  --fw-lig: 300;
+  --fw-reg: 500;
+  --fw-bold: 900;
+
+  --clr-high: #ff647f;
+  --clr-medHigh: #ff5c5c;
+  --clr-med: #ab5353;
+  --clr-low: #2f2fff;
+}
+
+/*-------general style-------*/
+
+.container {
+  font-family: var(--ff-primary);
+  text-align: center;
+  max-width: 260px;
+}
+.container-score {
+  font-weight: var(--fw-bold);
+}
+.container-score-item1 {
+  color: var(--clr-high);
+}
+.container-score-item2 {
+  color: var(--clr-medHigh);
+}
+.container-score-item3 {
+  color: var(--clr-med);
+}
+.container-score-item4 {
+  color: var(--clr-low);
+}
+/*-------typography-------*/
+.container-title {
+  font-size: 1.25rem;
+  font-weight: var(--fw-lig);
+  text-align: left;
+}
+.container-score {
+  font-size: 1.5rem;
+}
+
+/*--------layout-------*/
+.container-score-item {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid 1px #af57d9;
+  align-items: center;
+  margin: 0;
+}

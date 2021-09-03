@@ -1,0 +1,75 @@
+:root {
+  --ff-primary: "montserrat", sans-serif;
+  --ff-secondary: "helvetica", monospace;
+
+  --fw-lig: 300;
+  --fw-reg: 500;
+  --fw-bold: 900;
+
+  --clr-light: #fff;
+  --clr-part: #af57d9;
+  --clr-dark: #000000;
+}
+/*-------general style-------*/
+
+.container {
+  font-family: var(--ff-primary);
+  text-align: center;
+  max-width: 260px;
+}
+
+/*-------typography-------*/
+
+h1 {
+  font-size: 3rem;
+  color: var(--clr-part);
+  margin-bottom: 0;
+}
+h2 {
+  font-size: 1.25rem;
+  font-weight: var(--fw-reg);
+  margin: 0;
+}
+.container-type {
+  font-weight: var(--fw-lig);
+  font-style: italic;
+}
+.word-pronounce {
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: var(--clr-part);
+}
+.word-definition-body {
+  font-weight: var(--fw-lig);
+  font-size: 0.75rem;
+}
+
+/*--------layout-------*/
+
+.container-word {
+  margin-bottom: 0;
+}
+.container-type {
+  margin: 0;
+}
+.word-definition-body {
+  margin-top: 0.25em;
+  margin-bottom: 1em;
+}
+.word-pronounce {
+  padding-left: 0.5em;
+}
+
+.word-pronounciation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.word-definition {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+}
+.word-definition-body {
+  grid-column: 1/-1;
+}
